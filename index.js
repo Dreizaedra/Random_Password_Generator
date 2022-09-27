@@ -10,7 +10,7 @@ const password_btn_two = document.getElementById("password-btn-two");
 const message_el = document.getElementById("message-el");
 const copy_btns = document.getElementsByClassName("copy-btns");
 
-// Setting base value & desactivating copy buttons:
+// Setting base value & message, desactivating copy buttons:
 generate(); 
 toggle_copy_btns();
 
