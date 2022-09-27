@@ -24,6 +24,17 @@ function base_value_and_message() {
     user_input.value = 13;
 }
 
+// Copy btns on/off toggler:
+function toggle_copy_btns() { 
+    if (password_btn_one.disabled === true || message_el.innerHTML === "Click a password to copy it to your clipboard!") {
+        password_btn_one.disabled = false;
+        password_btn_two.disabled = false;
+    } else { // Called on page load only:
+        password_btn_one.disabled = true;
+        password_btn_two.disabled = true;
+    }
+};
+
 // Generate passwords button:
 function generate() { 
     if (user_input.value > 7 && user_input.value < 19) {
@@ -47,18 +58,7 @@ function generate() {
     };
 };
 
-// Copy btns on/off toggler:
-function toggle_copy_btns() { 
-    if (password_btn_one.disabled === true || message_el.innerHTML === "Click a password to copy it to your clipboard!") {
-        password_btn_one.disabled = false;
-        password_btn_two.disabled = false;
-    } else { // Called on page load only:
-        password_btn_one.disabled = true;
-        password_btn_two.disabled = true;
-    }
-};
-
-// Adding an onclick event for each button clicked:
+// Adding an onclick event for each copy button clicked:
 for (let i = 0; i < copy_btns.length; i++) {
     copy_btns[i].addEventListener("click", function () {
         // Sending the clicked button id to copy_to_clipboard function:
@@ -67,7 +67,7 @@ for (let i = 0; i < copy_btns.length; i++) {
 };
 
 function copy_to_clipboard(copy_btn_id) {
-    // Getting the correct button id
+    // Getting the correct copy button id
     let copy_btn = document.getElementById(copy_btn_id);
     // Copying it to clipboard
     navigator.clipboard.writeText(copy_btn.textContent);
