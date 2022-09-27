@@ -4,7 +4,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
 "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]; 
 
-const generate_passwords_btn = document.getElementById("generate-passwords-btn");
 const user_input = document.getElementById("user-input");
 const password_btn_one = document.getElementById("password-btn-one");
 const password_btn_two = document.getElementById("password-btn-two");
@@ -12,11 +11,11 @@ const message_el = document.getElementById("message-el");
 const copy_btns = document.getElementsByClassName("copy-btns");
 
 // Setting base value & desactivating copy buttons:
-user_input.value = 13; 
+generate(); 
 toggle_copy_btns();
 
 // Generate passwords button:
-generate_passwords_btn.addEventListener("click", function() { 
+function generate() { 
     if (user_input.value > 7 && user_input.value < 19) {
 
         // Resetting both passwords:
@@ -33,7 +32,7 @@ generate_passwords_btn.addEventListener("click", function() {
             password_btn_two.textContent += characters[Math.floor(Math.random() * characters.length)];
         }; 
 
-    } else { // if user_input.value isn't within 8-18 => resetting to base value & message:
+    } else { // called on page load && if user_input.value isn't within 8-18:
         message_el.innerHTML = `
             Type the number of characters you want<br />
             your password to have (8 to 18)<br />
@@ -41,9 +40,9 @@ generate_passwords_btn.addEventListener("click", function() {
         `;
         user_input.value = 13;
     };
-});
+};
 
-// Copy buttons on/off toggler:
+// Copy btns on/off toggler:
 function toggle_copy_btns() { 
     if (password_btn_one.disabled === true || message_el.innerHTML === "Click a password to copy it to your clipboard!") {
         password_btn_one.disabled = false;
@@ -65,7 +64,7 @@ for (let i = 0; i < copy_btns.length; i++) {
 function copy_to_clipboard(copy_btn_id) {
     // Getting the correct button id
     let copy_btn = document.getElementById(copy_btn_id);
-    // Copying its .textContent to clipboard
+    // Copying it to clipboard
     navigator.clipboard.writeText(copy_btn.textContent);
     alert("Copied the password: " + copy_btn.textContent);
 };
