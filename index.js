@@ -10,11 +10,11 @@ const password_btn_two = document.getElementById("password-btn-two");
 const message_el = document.getElementById("message-el");
 const copy_btns = document.getElementsByClassName("copy-btns");
 
-// Setting base value & desactivating copy buttons:
+// Setting base value, message && desactivating copy buttons:
 base_value_and_message(); 
 toggle_copy_btns();
 
-// called on page load && if user_input.value isn't within 8-18:
+// Called on page load && if user_input.value isn't within 8-18:
 function base_value_and_message() {
     message_el.innerHTML = `
             Type the number of characters you want<br />
