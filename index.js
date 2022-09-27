@@ -43,7 +43,7 @@ generate_passwords_btn.addEventListener("click", function() {
     };
 });
 
-// Copy btns on/off toggler:
+// Copy buttons on/off toggler:
 function toggle_copy_btns() { 
     if (password_btn_one.disabled === true || message_el.innerHTML === "Click a password to copy it to your clipboard!") {
         password_btn_one.disabled = false;
@@ -65,7 +65,7 @@ for (let i = 0; i < copy_btns.length; i++) {
 function copy_to_clipboard(copy_btn_id) {
     // Getting the correct button id
     let copy_btn = document.getElementById(copy_btn_id);
-    // Copying it to clipboard
+    // Copying its .textContent to clipboard
     navigator.clipboard.writeText(copy_btn.textContent);
     alert("Copied the password: " + copy_btn.textContent);
 };
