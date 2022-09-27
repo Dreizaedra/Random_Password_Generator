@@ -10,9 +10,19 @@ const password_btn_two = document.getElementById("password-btn-two");
 const message_el = document.getElementById("message-el");
 const copy_btns = document.getElementsByClassName("copy-btns");
 
-// Setting base value & message, desactivating copy buttons:
-generate(); 
+// Setting base value & desactivating copy buttons:
+base_value_and_message(); 
 toggle_copy_btns();
+
+// called on page load && if user_input.value isn't within 8-18:
+function base_value_and_message() {
+    message_el.innerHTML = `
+            Type the number of characters you want<br />
+            your password to have (8 to 18)<br />
+            <span class="bold text-green">Baseline : 13</span>
+        `;
+    user_input.value = 13;
+}
 
 // Generate passwords button:
 function generate() { 
@@ -32,13 +42,8 @@ function generate() {
             password_btn_two.textContent += characters[Math.floor(Math.random() * characters.length)];
         }; 
 
-    } else { // called on page load && if user_input.value isn't within 8-18:
-        message_el.innerHTML = `
-            Type the number of characters you want<br />
-            your password to have (8 to 18)<br />
-            <span class="bold text-green">Baseline : 13</span>
-        `;
-        user_input.value = 13;
+    } else { 
+        base_value_and_message();
     };
 };
 
