@@ -37,7 +37,7 @@ generate_passwords_btn.addEventListener("click", function() {
         message_el.innerHTML = `
             Type the number of characters you want<br />
             your password to have (8 to 18)<br />
-            <span class='bold text-green'>Baseline : 13</span>
+            <span class="bold text-green">Baseline : 13</span>
         `;
         user_input.value = 13;
     };
