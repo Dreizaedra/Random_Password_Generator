@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div id="frame">
+
+        <h1>Generate a<br /><span class="text-green">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+        <!--Generate btn & input field:-->
+        <div class="flex jc-space-between">
+            <button type="button" id="generate-passwords-btn">Generate passwords</button>
+            <div class="flex jc-end">
+                <input type="number" class="bold text-green bkgd-greyish" id="user-input">
+                <p>Number of<br />Characters</p>
+            </div>
+        </div>
+
+        <!--Bottom side:-->
+        <hr>
+        <button type="button" class="copy-btns bkgd-greyish" id="password-btn-one"></button>
+        <button type="button" class="copy-btns bkgd-greyish" id="password-btn-two"></button>
+        <p class="italic" id="message-el">
+            Type the number of characters you want<br />
+            your password to have (8 to 18)<br />
+            <span class='bold text-green'>Baseline : 13</span>
+        </p>
+
+    </div>  
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

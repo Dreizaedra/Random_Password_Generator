@@ -1,0 +1,107 @@
+/* GENERAL: */
+body {
+    text-align: justify;
+    background-color: #1C1C1C;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15em auto;
+    width: 30em;
+}
+
+#frame {
+    background-color: #1F2937;
+    width: 450px;
+    height: 400px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-green {
+    color: #10B981;
+}
+
+.bkgd-greyish {
+    background-color: #2F3E53;
+}
+
+
+/*FLEXBOX SETTINGS:*/
+.flex {
+    display: flex;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-end {
+    justify-content: end;
+}
+
+
+/* BUTTONS: */
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#generate-passwords-btn:focus {
+    border: 1px solid white;
+}
+#generate-passwords-btn {
+    color: white;
+    background: #10B981;
+    margin-top: 20px;
+}
+
+.copy-btns:focus {
+    border: 1px solid #10B981;
+}
+.copy-btns {
+    color: #55F991;
+    font-size: 16px;
+    width: 211px;
+    height: 39px;
+}
+
+#password-btn-one {
+    margin-right: 22px;
+}
+
+
+/* INPUT FIELD, LINE & MESSAGE: */
+input[type='number']::-webkit-inner-spin-button, /*Removing the input type=number arrows*/
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-right: 2px;
+    font-size: 25px;
+}
+
+hr {
+    border: 1px solid #2F3E53;
+    margin: 1em 0;
+}
+
+#message-el {
+    text-align: center;
+    margin-top: 27px;
+}
