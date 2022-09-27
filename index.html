@@ -13,7 +13,7 @@
 
         <!--Generate btn & input field:-->
         <div class="flex jc-space-between">
-            <button type="button" id="generate-passwords-btn">Generate passwords</button>
+            <button type="button" id="generate-passwords-btn" onclick="generate()">Generate passwords</button>
             <div class="flex jc-end">
                 <input type="number" class="bold text-green bkgd-greyish" id="user-input">
                 <p>Number of<br />Characters</p>
@@ -24,11 +24,7 @@
         <hr>
         <button type="button" class="copy-btns bkgd-greyish" id="password-btn-one"></button>
         <button type="button" class="copy-btns bkgd-greyish" id="password-btn-two"></button>
-        <p class="italic" id="message-el">
-            Type the number of characters you want<br />
-            your password to have (8 to 18)<br />
-            <span class='bold text-green'>Baseline : 13</span>
-        </p>
+        <p class="italic" id="message-el"></p>
 
     </div>  
 
