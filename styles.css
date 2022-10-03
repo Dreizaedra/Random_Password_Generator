@@ -79,7 +79,7 @@ button {
 }
 
 
-/* INPUT FIELD, LINE & MESSAGE: */
+/* INPUT FIELD, <hr> LINE & MESSAGE: */
 input[type='number']::-webkit-inner-spin-button, /*Removing the input type=number arrows*/
 input[type='number']::-webkit-outer-spin-button { 
     -webkit-appearance: none;
