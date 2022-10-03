@@ -8,26 +8,45 @@
 <body>
     <div id="frame">
 
-        <h1>Generate a<br /><span class="text-green">random password</span></h1>
-        <p>Never use an insecure password again.</p>
+        <!--TOP SIDE:-->
+        <section>
+            
+            <header>
+                <h1>
+                    Generate a<br />
+                    <span class="text-green">random password</span>
+                </h1>
+                <p>Never use an insecure password again.</p>
+            </header>
 
-        <!--Generate btn & input field:-->
-        <div class="flex jc-space-between">
-            <button type="button" id="generate-passwords-btn" onclick="generate()">Generate passwords</button>
-            <div class="flex jc-end">
-                <input type="number" class="bold text-green bkgd-greyish" id="user-input">
-                <p>Number of<br />Characters</p>
+            <!--GENERATE BTN & INPUT FIELD:-->
+            <div class="flex jc-space-between">
+
+                <button type="button" id="generate-passwords-btn" onclick="generate_btn()">
+                    Generate passwords
+                </button>
+                <div class="flex">
+                    <input type="number" class="bold text-green bkgd-greyish" id="user-input">
+                    <p>Number of<br />Characters</p>
+                </div>
+
             </div>
-        </div>
 
-        <!--Bottom side:-->
+        </section>
+
         <hr>
-        <button type="button" class="copy-btns bkgd-greyish" id="password-btn-one"></button>
-        <button type="button" class="copy-btns bkgd-greyish" id="password-btn-two"></button>
-        <p class="italic" id="message-el"></p>
+
+        <!--BOTTOM SIDE:-->
+        <section>
+
+            <button type="button" class="copy-btns bkgd-greyish" id="password-btn-one"></button>
+            <button type="button" class="copy-btns bkgd-greyish" id="password-btn-two"></button>
+            <p class="italic" id="message-el"></p>
+
+        </section>
 
     </div>  
 
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
