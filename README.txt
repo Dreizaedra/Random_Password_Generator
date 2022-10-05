@@ -10,4 +10,4 @@ _____________________________________________________________________________
 This is a small personal project I made to practice muscle memory  
 and coding front-end stuff more than anything else.
 
-Design from: https://www.figma.com/file/cqtGul0V8RFXY4vTcIv1Kc/Unit-Conversion?node-id=0%3A1
+Design from <https://www.figma.com/file/cqtGul0V8RFXY4vTcIv1Kc/Unit-Conversion?node-id=0%3A1>
