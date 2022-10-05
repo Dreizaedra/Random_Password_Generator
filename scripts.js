@@ -28,7 +28,7 @@ function base_value_and_message() {
 
 // Copy btns on/off toggler:
 function toggle_copy_btns() { 
-    if (password_btn_one.disabled === true || message_el.innerHTML === "Click a password to copy it to your clipboard!") {
+    if (password_btn_one.disabled || message_el.innerHTML === "Click a password to copy it to your clipboard!") {
         password_btn_one.disabled = false;
         password_btn_two.disabled = false;
     } else { 
