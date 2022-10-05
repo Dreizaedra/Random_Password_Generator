@@ -70,7 +70,7 @@ for (let i = 0; i < copy_btns.length; i++) {
 };
 
 function copy_to_clipboard(copy_btn_id) {
-    // Getting the correct copy button id from event listener
+    // Getting the correct copy button id from event listener (line 65)
     let copy_btn = document.getElementById(copy_btn_id);
     // Copying its .textContent to clipboard
     navigator.clipboard.writeText(copy_btn.textContent);
