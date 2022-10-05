@@ -7,5 +7,5 @@ whenever the user clicks them and alert him it did so.
 
 _____________________________________________________________________________
 
-This is a small personal project I made to practice coding 
-front-end stuff more than anything else.
+This is a small personal project I made to practice muscle memory  
+and coding front-end stuff more than anything else.
