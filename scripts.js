@@ -72,7 +72,7 @@ for (let i = 0; i < copy_btns.length; i++) {
 function copy_to_clipboard(copy_btn_id) {
     // Getting the correct copy button id
     let copy_btn = document.getElementById(copy_btn_id);
-    // Copying it to clipboard
+    // Copying its .textContent to clipboard
     navigator.clipboard.writeText(copy_btn.textContent);
     alert("Copied the password: " + copy_btn.textContent);
 };
