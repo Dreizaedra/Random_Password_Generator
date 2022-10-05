@@ -7,7 +7,7 @@ whenever the user clicks them and alert him it did so.
 
 _____________________________________________________________________________
 
-This is a small personal project I made to practice muscle memory, coding front-end stuff 
+This is a small personal project I made to practice muscle memory, mostly coding JS 
 and experimenting a bit with flexbox settings in CSS more than anything else.
 
 Design & idea from <https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/Random-Password-Generator-(New-version)>
