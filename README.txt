@@ -1,5 +1,8 @@
 A Random Password Generator
 
 Generates 2 random passwords from 8 to 18 characters (user's choice) on button press. 
-All possible characters included (like "/", "!", "#" etc etc).
-Function to copy to clipboard and alert the user when clicking the generated passwords. 
+It includes all possible characters (like "/", "!", "#" etc etc).
+I also added a function to copy the generated passwords to clipboard
+and alert the user when he clicks them. 
+
+This is a personal project I made to practice coding more than anything else.
