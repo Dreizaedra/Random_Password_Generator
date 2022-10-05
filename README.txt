@@ -5,4 +5,4 @@ It includes all possible characters (like "/", "!", "#" etc etc).
 I also added a function to copy the generated passwords to clipboard 
 whenever the user clicks them and alert him it did so. 
 
-This is a personal project I made to practice coding more than anything else.
+This is a personal project I made to practice coding - mainly JS here - more than anything else.
