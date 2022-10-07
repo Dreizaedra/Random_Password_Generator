@@ -5,6 +5,9 @@ The passwords include all possible characters (like "/", "!", "#" etc etc).
 Also added a function to copy the generated passwords to clipboard 
 whenever the user clicks them and alert him it did so. 
 
+Please look at 'Example.png' located in the images folder 
+if you want to see what this tool looks like.
+
 _____________________________________________________________________________
 
 This is a small personal project I made to practice muscle memory, mostly coding JS 
